@@ -9,6 +9,7 @@ import java.lang.reflect.Method;
  * Created by victor.burtsev@gmail.com on 10/22/17.
  */
 
+
 public class ReflectionExampleTest {
 
     private ReflectionExample reflectionExample = new ReflectionExample();

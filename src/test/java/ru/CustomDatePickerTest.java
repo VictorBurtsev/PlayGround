@@ -7,6 +7,7 @@ import org.junit.Test;
  * Created by victor.burtsev@gmail.com on 10/21/17.
  */
 
+
 public class CustomDatePickerTest {
     @Test
     public void testDayOfTheWeekByDate() throws Exception {

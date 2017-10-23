@@ -4,25 +4,25 @@ package ru;
  * Created by victor.burtsev@gmail.com on 10/21/17.
  */
 
-class CustomDatePicker {
+public class CustomDatePicker {
     private int day;
     private int month;
     private int year;
 
-    CustomDatePicker(final int day, final int month, final int year) {
+    public CustomDatePicker(final int day, final int month, final int year) {
         this.day = day;
         this.month = month;
         this.year = year;
     }
 
-    int getDayOfTheWeekByDate() {
+    public int getDayOfTheWeekByDate() {
         int a = (14 - this.month) / 12;
         this.year = this.year - a;
         int month = this.month + 12 * a - 2;
         return (7000 + (this.day + this.year + this.year / 4 - this.year / 100 + this.year / 400 + (31 * month) / 12)) % 7;
     }
 
-    String dayOfTheWeekPrinter() {
+    public String dayOfTheWeekPrinter() {
         String day = "";
 
         switch (this.getDayOfTheWeekByDate()) {
@@ -52,7 +52,7 @@ class CustomDatePicker {
         return day;
     }
 
-    int dayNumPositionForDatePicker() {
+    public int dayNumPositionForDatePicker() {
         int dayOfTheWeekByDate = this.getDayOfTheWeekByDate();
         dayOfTheWeekByDate++;
 

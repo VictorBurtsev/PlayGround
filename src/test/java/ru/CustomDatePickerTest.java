@@ -89,4 +89,13 @@ public class CustomDatePickerTest {
             Assert.assertEquals(new CustomDatePicker(dayNum, 7, 2017).dayNumPositionForDatePicker(), startPosition++);
         }
     }
+
+    @Test
+    public void test8DayNumPositionForDatePicker() throws Exception {
+        int startPosition = 8;
+
+        for (int dayNum = 1; dayNum <= 31; dayNum++) {
+            Assert.assertEquals(new CustomDatePicker(dayNum, 1, 2017).dayNumPositionForDatePicker(), startPosition++);
+        }
+    }
 }

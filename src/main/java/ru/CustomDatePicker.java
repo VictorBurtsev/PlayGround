@@ -17,9 +17,9 @@ public class CustomDatePicker {
 
     public int getDayOfTheWeekByDate() {
         int a = (14 - this.month) / 12;
-        this.year = this.year - a;
+        int year = this.year - a;
         int month = this.month + 12 * a - 2;
-        return (7000 + (this.day + this.year + this.year / 4 - this.year / 100 + this.year / 400 + (31 * month) / 12)) % 7;
+        return (7000 + (this.day + year + year / 4 - year / 100 + year / 400 + (31 * month) / 12)) % 7;
     }
 
     public String dayOfTheWeekPrinter() {
